@@ -6,7 +6,42 @@
         xmlns:local="clr-namespace:_2022._10._19__1_class"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0,1,0,-1">
+   <Window.Resources>
+        <Style TargetType="Button" x:Key="RedBut">
+            <Setter Property="Background" Value="Red"/>
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="YellowBut">
+            <Setter Property="Background" Value="Yellow"/>
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="GreenBut">
+            <Setter Property="Background" Value="LightGreen"/>
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="BlueBut">
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="PinkBut">
+            <Setter Property="Background" Value="Pink"/>
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+        </Style>
+      
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="2"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="2"></Setter>
+        </Style>
+    </Window.Resources>      
+         <Grid Margin="0,1,0,-1">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -17,7 +52,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-
+        
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
@@ -35,13 +70,13 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="99"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="3" Grid.Column="1" Background="HotPink">1</Button>
-            <Button Grid.Row="3" Grid.Column="0" Background="HotPink">`</Button>
-            <Button Grid.Row="3" Grid.Column="2" Background="HotPink">2</Button>
-            <Button Grid.Row="3" Grid.Column="3" Background="Yellow">3</Button>
-            <Button Grid.Row="3" Grid.Column="4"  Background="LightGreen">4</Button>
-            <Button Grid.Row="3" Grid.Column="5" Background="LightBlue">5</Button>
-            <Button Grid.Row="3" Grid.Column="6" Background="LightBlue">6</Button>
+                <Button Grid.Row="3" Grid.Column="0" Name="Oem3" Style="{StaticResource RedBut}">`</Button> 
+                <Button Grid.Row="3" Grid.Column="1" Name="B1" Style="{StaticResource RedBut}">1</Button>
+            <Button Grid.Row="3" Grid.Column="2" Name="B2" Style="{StaticResource RedBut}">2</Button>
+            <Button Grid.Row="3" Grid.Column="3" Name="B3" Style="{StaticResource YellowBut}">3</Button>
+            <Button Grid.Row="3" Grid.Column="4"  Name="B4" Style="{StaticResource GreenBut}">4</Button>
+            <Button Grid.Row="3" Grid.Column="5"  Name="B4" Style="{StaticResource BlueBut}">5</Button>
+            <Button Grid.Row="3" Grid.Column="6" Name="B6" Style="{StaticResource BlueBut}">6</Button>
             <Button Grid.Row="3" Grid.Column="7">7</Button>
             <Button Grid.Row="3" Grid.Column="8">8</Button>
             <Button Grid.Row="3" Grid.Column="9">9</Button>
@@ -68,17 +103,17 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="69"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="4" Grid.Column="1" Background="HotPink">Q</Button>
+            <Button Grid.Row="4" Grid.Column="1" Name="Q" Style="{StaticResource RedBut}">q</Button>
             <Button Grid.Row="4" Grid.Column="0">Tab</Button>
-            <Button Grid.Row="4" Grid.Column="2" Background="Yellow">W</Button>
-            <Button Grid.Row="4" Grid.Column="3" Background="LightGreen">E</Button>
-            <Button Grid.Row="4" Grid.Column="4" Background="LightBlue">R</Button>
-            <Button Grid.Row="4" Grid.Column="5" Background="LightBlue">T</Button>
-            <Button Grid.Row="4" Grid.Column="6">Y</Button>
-            <Button Grid.Row="4" Grid.Column="7">U</Button>
-            <Button Grid.Row="4" Grid.Column="8">I</Button>
-            <Button Grid.Row="4" Grid.Column="9">O</Button>
-            <Button Grid.Row="4" Grid.Column="10">P</Button>
+            <Button Grid.Row="4" Grid.Column="2" Name="W" Style="{StaticResource YellowBut}">w</Button>
+            <Button Grid.Row="4" Grid.Column="3" Name="E" Style="{StaticResource GreenBut}">e</Button>
+            <Button Grid.Row="4" Grid.Column="4" Name="R" Style="{StaticResource GreenBut}">r</Button>
+            <Button Grid.Row="4" Grid.Column="5"  Name="T" Style="{StaticResource BlueBut}">t</Button>
+            <Button Grid.Row="4" Grid.Column="6">y</Button>
+            <Button Grid.Row="4" Grid.Column="7">u</Button>
+            <Button Grid.Row="4" Grid.Column="8">i</Button>
+            <Button Grid.Row="4" Grid.Column="9">o</Button>
+            <Button Grid.Row="4" Grid.Column="10">p</Button>
             <Button Grid.Row="4" Grid.Column="11">[</Button>
             <Button Grid.Row="4" Grid.Column="12">]</Button>
             <Button Grid.Row="4" Grid.Column="13">\</Button>
