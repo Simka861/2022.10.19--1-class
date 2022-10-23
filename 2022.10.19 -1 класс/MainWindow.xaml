@@ -109,14 +109,14 @@
             <Button Grid.Row="4" Grid.Column="3" Name="E" Style="{StaticResource GreenBut}">e</Button>
             <Button Grid.Row="4" Grid.Column="4" Name="R" Style="{StaticResource GreenBut}">r</Button>
             <Button Grid.Row="4" Grid.Column="5"  Name="T" Style="{StaticResource BlueBut}">t</Button>
-            <Button Grid.Row="4" Grid.Column="6">y</Button>
-            <Button Grid.Row="4" Grid.Column="7">u</Button>
-            <Button Grid.Row="4" Grid.Column="8">i</Button>
-            <Button Grid.Row="4" Grid.Column="9">o</Button>
-            <Button Grid.Row="4" Grid.Column="10">p</Button>
-            <Button Grid.Row="4" Grid.Column="11">[</Button>
-            <Button Grid.Row="4" Grid.Column="12">]</Button>
-            <Button Grid.Row="4" Grid.Column="13">\</Button>
+            <Button Grid.Row="4" Grid.Column="6" Name="Y"></Button>
+            <Button Grid.Row="4" Grid.Column="7" Name="U"></Button>
+            <Button Grid.Row="4" Grid.Column="8" Name="Y"></Button>
+            <Button Grid.Row="4" Grid.Column="9" Name="O"></Button>
+            <Button Grid.Row="4" Grid.Column="10" Name="P"></Button>
+            <Button Grid.Row="4" Grid.Column="11" Name="Leftsquare_bracket"></Button>
+            <Button Grid.Row="4" Grid.Column="12"  Name="Rightsquare_bracket"></Button>
+            <Button Grid.Row="4" Grid.Column="13" Name="slash1"></Button>
         </Grid>
 
         <Grid Grid.Row="5">
@@ -135,19 +135,19 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="79"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="4" Grid.Column="1" Background="HotPink">A</Button>
+            <Button Grid.Row="4" Grid.Column="1" Name="A" Style="{StaticResource RedBut}"></Button>
             <Button Grid.Row="4" Grid.Column="0">CapLock</Button>
-            <Button Grid.Row="4" Grid.Column="2"  Background="Yellow">S</Button>
-            <Button Grid.Row="4" Grid.Column="3"  Background="LightGreen">D</Button>
-            <Button Grid.Row="4" Grid.Column="4" Background="LightBlue">F</Button>
-            <Button Grid.Row="4" Grid.Column="5" Background="LightBlue">G</Button>
-            <Button Grid.Row="4" Grid.Column="6">H</Button>
-            <Button Grid.Row="4" Grid.Column="7">J</Button>
-            <Button Grid.Row="4" Grid.Column="8">K</Button>
-            <Button Grid.Row="4" Grid.Column="9">L</Button>
-            <Button Grid.Row="4" Grid.Column="10">;</Button>
-            <Button Grid.Row="4" Grid.Column="11">'</Button>
-            <Button Grid.Row="4" Grid.Column="12">Enter</Button>
+            <Button Grid.Row="4" Grid.Column="2" Name="S" Style="{StaticResource YellowBut}"></Button>
+            <Button Grid.Row="4" Grid.Column="3" Name="D" Style="{StaticResource GreenBut}"></Button>
+            <Button Grid.Row="4" Grid.Column="4" Name="F" Style="{StaticResource BlueBut}"></Button>
+            <Button Grid.Row="4" Grid.Column="5" Name="G" Style="{StaticResource BlueBut}"></Button>
+            <Button Grid.Row="4" Grid.Column="6" Nmae="H"></Button>
+            <Button Grid.Row="4" Grid.Column="7" Name="J"></Button>
+            <Button Grid.Row="4" Grid.Column="8" Name="K"></Button>
+            <Button Grid.Row="4" Grid.Column="9" Name="L"></Button>
+            <Button Grid.Row="4" Grid.Column="10" Name="Semicolon"></Button>
+            <Button Grid.Row="4" Grid.Column="11" Name="Upper_comma"></Button>
+            <Button Grid.Row="4" Grid.Column="12" Name="Enter"></Button>
         </Grid>
 
         <Grid Grid.Row="6">
@@ -165,19 +165,19 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="108"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="4" Grid.Column="1" Background="HotPink">Z</Button>
-            <Button Grid.Row="4" Grid.Column="0">Shift</Button>
-            <Button Grid.Row="4" Grid.Column="2" Background="Yellow">X</Button>
-            <Button Grid.Row="4" Grid.Column="3"  Background="LightGreen">C</Button>
-            <Button Grid.Row="4" Grid.Column="4"  Background="LightBlue">V</Button>
-            <Button Grid.Row="4" Grid.Column="5" Background="LightBlue">B</Button>
-            <Button Grid.Row="4" Grid.Column="6">N</Button>
-            <Button Grid.Row="4" Grid.Column="7">M</Button>
-            <Button Grid.Row="4" Grid.Column="8">,</Button>
-            <Button Grid.Row="4" Grid.Column="9">.</Button>
-            <Button Grid.Row="4" Grid.Column="10">/</Button>
+            <Button Grid.Row="4" Grid.Column="1" Name="Z"  Style="{StaticResource RedBut}"></Button>
+            <Button Grid.Row="4" Grid.Column="0" Name="LeftShift"></Button>
+            <Button Grid.Row="4" Grid.Column="2" Name="X"  Style="{StaticResource YellowBut}"></Button>
+            <Button Grid.Row="4" Grid.Column="3" Name="C"  Style="{StaticResource GreenBut}">C</Button>
+            <Button Grid.Row="4" Grid.Column="4" Name="V"  Style="{StaticResource BlueBut}"></Button>
+            <Button Grid.Row="4" Grid.Column="5" Name="V" Style="{StaticResource BlueBut}"></Button>
+            <Button Grid.Row="4" Grid.Column="6" Name="N" ></Button>
+            <Button Grid.Row="4" Grid.Column="7" Name="M" ></Button>
+            <Button Grid.Row="4" Grid.Column="8" Name="Comma"></Button>
+            <Button Grid.Row="4" Grid.Column="9" Name="Dot">.</Button>
+            <Button Grid.Row="4" Grid.Column="10"  Name="slash2">/</Button>
             <Button Grid.Row="4" Grid.Column="11">'</Button>
-            <Button Grid.Row="4" Grid.Column="12">Shift</Button>
+            <Button Grid.Row="4" Grid.Column="12"  Name="RightShift"></Button>
         </Grid>
 
         <Grid Grid.Row="7">
@@ -190,13 +190,13 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition ></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="4" Grid.Column="1">Win</Button>
-            <Button Grid.Row="4" Grid.Column="0">Ctrl</Button>
-            <Button Grid.Row="4" Grid.Column="2">Alt</Button>
-            <Button Grid.Row="4" Grid.Column="3">Space</Button>
-            <Button Grid.Row="4" Grid.Column="4">Alt</Button>
-            <Button Grid.Row="4" Grid.Column="5">Win</Button>
-            <Button Grid.Row="4" Grid.Column="6">Ctrl</Button>
+            <Button Grid.Row="4" Grid.Column="1" Name="LeftWin"></Button>
+            <Button Grid.Row="4" Grid.Column="0" Name="RightCtrl"></Button>
+            <Button Grid.Row="4" Grid.Column="2" Name="LeftAlt"></Button>
+            <Button Grid.Row="4" Grid.Column="3" Name="Space"></Button>
+            <Button Grid.Row="4" Grid.Column="4"  Name="LeftAlt"></Button>
+            <Button Grid.Row="4" Grid.Column="5" Name="RightWin"></Button>
+            <Button Grid.Row="4" Grid.Column="6" Name="RightCtrl"></Button>
         </Grid>
 
         <TextBox Grid.Row="2"   Background="LightBlue"></TextBox>
